@@ -44,6 +44,12 @@ body {
 .ayman {
   min-height: 100vh;
 }
+.siteLink {
+  overflow: hidden;
+}
+.siteLink li {
+  position: relative;
+}
 .spinn,
 .spinnOut {
   transform: rotate(0deg);
