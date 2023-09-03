@@ -30,7 +30,19 @@ body {
 .spinnParent,
 .spinnOuter {
   background-color: #000 !important;
-  z-index: 9;
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ayman {
+  min-height: 100vh;
 }
 .spinn,
 .spinnOut {
@@ -41,18 +53,15 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-fill-mode: both;
-  width: fit-content;
+  display: inline-block;
 }
 .spinn i {
   font-size: 4rem;
   color: #fff;
 }
 @keyframes abdo {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+  to {
+    transform: rotate(1turn);
   }
 }
 

@@ -19,8 +19,9 @@ async function getAll(apiLink, word) {
     data = await res.json();
     return data[`${word}`];
   } catch (err) {
-    console.log(err);
+    console.log(`faild to fetch Data ! api problem ${err}`);
   } finally {
+    console.log("iam before finally");
     toggleSpin();
   }
 }
@@ -147,10 +148,9 @@ function testInputs() {
   let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/g;
   let phonePattern = /^\d{10,11}$/gi;
 
-  // let nameInput = document.querySelector(".name");
-  // let nameAlert = document.querySelector(".name +div");
   let allInputs = document.getElementsByName("inputs");
   let allAlerts = document.querySelectorAll(".alert");
+
   allAlerts.forEach((alert) => {
     if (alert.classList.contains("d-block")) {
       document.getElementById("inputsSubmit").classList.remove("disabled");

@@ -18,7 +18,7 @@
     <link rel="icon" href="./images/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="row g-0">
+    <div class="ayman">
       <!-- <div
         class="spinnOuter position-absolute w-100 top-0 start-0 bottom-0 end-0 h-100 bg-black d-flex align-items-center justify-content-center d-none"
       >
@@ -27,6 +27,12 @@
         </div>
       </div> -->
       <!-- sidebar-nav -->
+      <div class="spinnParent d-none">
+        <span class="spinn">
+          <i class="text-light fa-solid fa-spinner"></i>
+        </span>
+      </div>
+
       <div class="sidebar-nav top-0 position-fixed">
         <div class="d-flex text-black">
           <div
@@ -93,7 +99,7 @@
           </div>
 
           <div
-            class="nav-header ayman min-vh-100 d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black"
+            class="nav-header ayman d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black"
           >
             <div class="logo">
               <img src="./images/logo.png" alt="" srcset="" />
@@ -115,14 +121,7 @@
       </div>
 
       <!-- sidebar-nav-End -->
-      <div class="container pt-4 position-relative min-vh-100">
-        <div
-          class="spinnParent position-absolute w-100 top-0 start-0 bottom-0 end-0 h-100 bg-black d-flex align-items-center justify-content-center d-none"
-        >
-          <div class="spinn">
-            <i class="text-light fa-solid fa-spinner"></i>
-          </div>
-        </div>
+      <div class="container pt-4">
         <div class="searchBars d-none" id="searchBars"></div>
 
         <div class="row g-4 py-4" id="dataContainer"></div>
