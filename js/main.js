@@ -270,7 +270,7 @@ function testInputs() {
       if (input.id == "age") {
         // console.log(`${input.id}Pattern`);
 
-        if (e.target.value < "150") {
+        if (e.target.value < 150) {
           document
             .querySelector(`#${input.id} +div`)
             .classList.replace("d-block", "d-none");
