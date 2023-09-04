@@ -422,7 +422,7 @@ async function displaySearch() {
 
 function searchName() {
   let searchNameINput = document.getElementById("searchbyName");
-  searchNameINput.addEventListener("input", (e) => {
+  searchNameINput.addEventListener("keyup", (e) => {
     filterData(
       "https://www.themealdb.com/api/json/v1/1/search.php?s=",
       `${e.target.value}`
@@ -433,7 +433,7 @@ function searchLetter() {
   let searchLetterINput = document.getElementById("searchbyLetter");
   searchLetterINput.setAttribute("maxlength", "1");
 
-  searchLetterINput.addEventListener("input", function (e) {
+  searchLetterINput.addEventListener("keyup", function (e) {
     filterData(
       "https://www.themealdb.com/api/json/v1/1/search.php?f=",
       `${e.target.value}`
@@ -522,6 +522,7 @@ function getDetailsById(getMeals) {
 
 //! عرض تفاصيل مكونات الوجبات الافتراضيه (ليس المقادير)
 function mealsDetails(currentMeal) {
+  searchContainer.classList.add("d-none");
   let cartona = `
   
   <div

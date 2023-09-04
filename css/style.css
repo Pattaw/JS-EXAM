@@ -27,11 +27,10 @@ body {
   /* display: none !important; */
 }
 /* spinner */
-.spinnParent,
-.spinnOuter {
+.spinnParent {
   background-color: #000 !important;
   z-index: 8;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -41,17 +40,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.ayman {
-  min-height: 100vh;
-}
+
 .siteLink {
   overflow: hidden;
 }
 .siteLink li {
   position: relative;
 }
-.spinn,
-.spinnOut {
+.spinn {
   transform: rotate(0deg);
   transition: 0.5s;
   animation-name: abdo;
